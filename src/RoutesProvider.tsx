@@ -23,7 +23,7 @@ function RoutesProvider(): React.ReactElement {
           ),
         },
         {
-          path: "service",
+          path: "servicios",
           element: (
             <>
               <Servicios />
