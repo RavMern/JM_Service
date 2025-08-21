@@ -1,16 +1,23 @@
+import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
+
 import ButtonSolicitar from "../UI/ButtonSolicitar";
-const Instalacion = () => {
+
+const Instalacion: React.FC = () => {
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center gap-20">
+    <div className="flex md:flex-row flex-col justify-center items-center gap-20 px-4 md:px-8">
       {/*TODO Columna izquierda */}
       <div className="flex flex-col gap-6 max-w-md md:text-left text-center">
-        <h2 className="font-bold text-white text-2xl">x Instalación</h2>
+        <h2 className="font-bold text-white text-2xl">
+          Electricista Matriculado
+        </h2>
+
         <p className="text-gray-300">
           Nos encargamos de cada instalación eléctrica con la máxima seguridad y
           calidad, para que disfrutes de tu hogar o negocio sin preocupaciones.
         </p>
-        <div className="flex justify-center md:justify-start gap-4">
+
+        <div className="flex justify-center md:justify-start gap-4 mt-4">
           <ButtonSolicitar
             icon={<BsWhatsapp />}
             whatsappNumber="541112345678"
