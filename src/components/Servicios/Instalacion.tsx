@@ -5,14 +5,16 @@ import ButtonSolicitar from "../UI/ButtonSolicitar";
 
 const Instalacion: React.FC = () => {
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center gap-20 px-4 md:px-8">
+    <div className="flex md:flex-row flex-col justify-center items-center gap-12 px-4 md:px-8">
       {/*TODO Columna izquierda */}
-      <div className="flex flex-col gap-6 max-w-md md:text-left text-center">
-        <h2 className="font-bold text-white text-2xl">
+      <div className="flex flex-col gap-10 max-w-md md:text-left text-center">
+        <h2 className="font-bold text-white text-2xl md:text-4xl">
           Electricista Matriculado
         </h2>
 
-        <p className="text-gray-300">
+        <p className="text-gray-300 text-sm">
+          Nos encargamos de cada instalación eléctrica con la máxima seguridad y
+          calidad, para que disfrutes de tu hogar o negocio sin preocupaciones.
           Nos encargamos de cada instalación eléctrica con la máxima seguridad y
           calidad, para que disfrutes de tu hogar o negocio sin preocupaciones.
         </p>
@@ -27,11 +29,19 @@ const Instalacion: React.FC = () => {
       </div>
 
       {/*TODO Columna derecha */}
-      <div className="flex-shrink-0">
+      <div className="relative flex-shrink-0">
+        <div className="top-20 left-62 -z-10 absolute border-9 border-cta w-28 md:w-40 h-[calc(100%-12rem)] -translate-x-16"></div>
+
         <img
-          src="/Image.png"
+          src="/electric.webp"
           alt="Instalación"
-          className="shadow-md rounded-lg w-full max-w-sm"
+          className="shadow-md rounded-lg w-72 h-auto"
+        />
+
+        <img
+          src="/elecSub.webp"
+          alt="Aire acondicionado"
+          className="bottom-9 -left-10 absolute shadow-lg border-[#2F456F] border-6 rounded-r-full rounded-l-full w-36 h-24"
         />
       </div>
     </div>
