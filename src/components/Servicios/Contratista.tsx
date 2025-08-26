@@ -35,7 +35,7 @@ const Contratista: React.FC = () => {
         <img
           src="/contratista.webp"
           alt="Instalación"
-          className="shadow-md rounded-lg w-72 h-auto"
+          className="shadow-md rounded-tl-4xl rounded-br-4xl w-72 h-auto"
         />
 
         <img

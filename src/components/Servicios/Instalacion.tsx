@@ -7,16 +7,20 @@ const Instalacion: React.FC = () => {
   return (
     <div className="flex md:flex-row flex-col justify-center items-center gap-12 px-4 md:px-8">
       {/*TODO Columna izquierda */}
-      <div className="flex flex-col gap-10 max-w-md md:text-left text-center">
-        <h2 className="font-bold text-white text-2xl md:text-4xl">
+      <div className="flex flex-col gap-4 max-w-md md:text-left text-center">
+        <h3 className="font-montserrat text-gray-300 text-lg">
+          <span className="-bottom-25 left-62 absolute bg-yellow-400 w-6 h-0.5"></span>
           Electricista Matriculado
+        </h3>
+        <h2 className="font-bold text-white text-2xl md:text-3xl">
+          Más de 10 Años de Experiencia en Electricidad
         </h2>
 
         <p className="text-gray-300 text-sm">
-          Nos encargamos de cada instalación eléctrica con la máxima seguridad y
-          calidad, para que disfrutes de tu hogar o negocio sin preocupaciones.
-          Nos encargamos de cada instalación eléctrica con la máxima seguridad y
-          calidad, para que disfrutes de tu hogar o negocio sin preocupaciones.
+          Realizamos instalaciones y reparaciones eléctricas con los más altos
+          estándares de seguridad y calidad. Garantizamos un servicio rápido,
+          eficiente y certificado, para que tu hogar, industria y negocio
+          funcionen sin interrupciones.
         </p>
 
         <div className="flex justify-center md:justify-start gap-4 mt-4">
@@ -35,7 +39,7 @@ const Instalacion: React.FC = () => {
         <img
           src="/electric.webp"
           alt="Instalación"
-          className="shadow-md rounded-lg w-72 h-auto"
+          className="shadow-md rounded-tl-4xl rounded-br-4xl w-72 h-auto"
         />
 
         <img
