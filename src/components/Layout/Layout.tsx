@@ -1,16 +1,16 @@
-import React from 'react'
-import Header from '../Header/Header'
-import { Outlet } from 'react-router-dom'
+import React from "react";
+import Header from "../Header/Header";
+import { Outlet } from "react-router-dom";
 
 function Layout(): React.ReactElement {
-    return (
-        <div>
-            <Header />
-            <div className='px-14 py-20'>
-                <Outlet />
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <div>
+        <Outlet />
+      </div>
+    </div>
+  );
 }
 
-export default Layout
+export default Layout;
