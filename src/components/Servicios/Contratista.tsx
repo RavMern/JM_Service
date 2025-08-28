@@ -22,7 +22,7 @@ const Contratista: React.FC = () => {
         <div className="flex justify-center md:justify-start gap-4 mt-4">
           <ButtonSolicitar
             icon={<BsWhatsapp />}
-            whatsappNumber="541112345678"
+            whatsappNumber="+5491134705822"
             text="Solicitar"
           />
         </div>

@@ -26,7 +26,7 @@ const Instalacion: React.FC = () => {
         <div className="flex justify-center md:justify-start gap-4 mt-4">
           <ButtonSolicitar
             icon={<BsWhatsapp />}
-            whatsappNumber="541112345678"
+            whatsappNumber="+541154781055"
             text="Solicitar"
           />
         </div>

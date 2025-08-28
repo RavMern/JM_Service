@@ -3,6 +3,8 @@ import Contratista from "../components/Servicios/Contratista";
 import Instalacion from "../components/Servicios/Instalacion";
 import Tecnico from "../components/Servicios/Tecnico";
 import CarService from "../components/Servicios/CardService";
+import BuilderService from "../components/Servicios/BuilderService";
+import RefrigerationService from "../components/Servicios/RefrigerationService";
 
 function Servicios() {
   return (
@@ -51,7 +53,13 @@ function Servicios() {
           <Instalacion />
         </section>
         <section>
+          <RefrigerationService />
+        </section>
+        <section>
           <Tecnico />
+        </section>
+        <section>
+          <BuilderService />
         </section>
         <section>
           <Contratista />
