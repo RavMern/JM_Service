@@ -34,7 +34,7 @@ function Servicios() {
             >
               <h1 className="relative mb-2 font-bold text-white text-3xl md:text-5xl">
                 <span className="text-cta md:text-6xl">JM</span> Service
-                <span className="-bottom-1 left-55 absolute bg-cta w-16 md:w-18 h-0.5 -translate-x-1/2"></span>
+                <span className="block md:-bottom-1 left-32 md:left-55 absolute bg-cta w-16 md:w-18 h-0.5 -translate-x-1/2"></span>
               </h1>
               <p className="mt-2 max-w-md font-montserrat text-gray-200 text-end">
                 Electricidad y servicios
@@ -44,11 +44,11 @@ function Servicios() {
         </div>
       </div>
 
-      <div className="z-20 relative -mt-20 md:-mt-6">
+      <div className="z-20 relative -mt-8 md:mb-0">
         <CarService />
       </div>
 
-      <div className="space-y-10 px-4 md:px-8 md:py-9">
+      <div className="space-y-10 px-4 md:px-8 py-12 md:py-9">
         <section>
           <Instalacion />
         </section>
