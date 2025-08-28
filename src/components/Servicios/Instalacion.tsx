@@ -19,7 +19,7 @@ const Instalacion: React.FC = () => {
         <p className="text-gray-300 text-sm">
           Realizamos instalaciones y reparaciones eléctricas con los más altos
           estándares de seguridad y calidad. Garantizamos un servicio rápido,
-          eficiente y certificado, para que tu hogar, industria y negocio
+          eficiente y certificado, para que tu hogar, industria o comercio
           funcionen sin interrupciones.
         </p>
 

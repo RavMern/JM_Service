@@ -34,7 +34,7 @@ function Servicios() {
                 <span className="text-cta md:text-6xl">JM</span> Service
                 <span className="-bottom-1 left-55 absolute bg-cta w-16 md:w-18 h-0.5 -translate-x-1/2"></span>
               </h1>
-              <p className="mt-2 max-w-md text-gray-200 text-end">
+              <p className="mt-2 max-w-md font-montserrat text-gray-200 text-end">
                 Electricidad y servicios
               </p>
             </motion.div>
