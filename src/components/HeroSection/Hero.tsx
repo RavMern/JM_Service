@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
+import { Link } from 'react-router-dom'
 
 function Hero(): React.ReactElement {
     return (
@@ -42,7 +43,11 @@ function Hero(): React.ReactElement {
                         initial={{ translateX: -180, opacity: 0 }}
                         whileInView={{ translateX: 0, opacity: 1 }}
                         transition={{ duration: 1.3, }}
-                        viewport={{ once: true }} className='bg-cta hover:bg-[#dd8e17] p-2 rounded-md w-max font-semibold text-md text-white text-lg duration-200 cursor-pointer'>Conocer Más</motion.button>
+                        viewport={{ once: true }} className='bg-cta hover:bg-[#dd8e17] p-2 rounded-md w-max font-semibold text-md text-white text-lg duration-200 cursor-pointer'>
+                        <Link to={"/servicios"}>
+                            Conocer Más
+                        </Link>
+                    </motion.button>
                 </header>
             </div>
         </div >
