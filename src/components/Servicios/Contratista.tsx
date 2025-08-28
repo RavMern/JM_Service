@@ -34,19 +34,19 @@ const Contratista: React.FC = () => {
       </div>
 
       {/*TODO Columna derecha */}
-      <div className="relative flex-shrink-0">
-        <div className="top-20 left-62 -z-10 absolute border-9 border-cta w-28 md:w-40 h-[calc(100%-12rem)] -translate-x-16"></div>
+      <div className="relative flex-shrink-0 my-6 md:my-0">
+        <span className="-top-6 md:-top-6 left-52 md:left-50 z-10 absolute border-9 border-cta w-38 md:w-46 h-[calc(100%-12rem)] -translate-x-10"></span>
 
         <img
           src="/contratista.webp"
           alt="Instalación"
-          className="shadow-md rounded-tl-4xl rounded-br-4xl w-72 h-auto"
+          className="z-10 relative shadow-md rounded-tl-4xl rounded-br-4xl w-72 h-auto"
         />
 
         <img
           src="/contratista2.webp"
           alt="Aire acondicionado"
-          className="bottom-9 -left-10 absolute shadow-lg border-[#2F456F] border-6 rounded-r-full rounded-l-full w-36 h-24"
+          className="bottom-9 -left-10 z-20 absolute shadow-lg border-[#2F456F] border-6 rounded-r-full rounded-l-full w-36 h-24"
         />
       </div>
     </div>

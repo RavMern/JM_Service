@@ -44,7 +44,7 @@ function Servicios() {
         </div>
       </div>
 
-      <div className="z-20 relative -mt-8 md:mt-10">
+      <div className="z-20 relative -mt-8 md:mb-0">
         <CarService />
       </div>
 
