@@ -3,6 +3,8 @@ import Contratista from "../components/Servicios/Contratista";
 import Instalacion from "../components/Servicios/Instalacion";
 import Tecnico from "../components/Servicios/Tecnico";
 import CarService from "../components/Servicios/CardService";
+import BuilderService from "../components/Servicios/BuilderService";
+import RefrigerationService from "../components/Servicios/RefrigerationService";
 
 function Servicios() {
   return (
@@ -34,7 +36,7 @@ function Servicios() {
                 <span className="text-cta md:text-6xl">JM</span> Service
                 <span className="-bottom-1 left-55 absolute bg-cta w-16 md:w-18 h-0.5 -translate-x-1/2"></span>
               </h1>
-              <p className="mt-2 max-w-md text-gray-200 text-end">
+              <p className="mt-2 max-w-md font-montserrat text-gray-200 text-end">
                 Electricidad y servicios
               </p>
             </motion.div>
@@ -51,7 +53,13 @@ function Servicios() {
           <Instalacion />
         </section>
         <section>
+          <RefrigerationService />
+        </section>
+        <section>
           <Tecnico />
+        </section>
+        <section>
+          <BuilderService />
         </section>
         <section>
           <Contratista />

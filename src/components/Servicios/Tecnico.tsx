@@ -23,22 +23,27 @@ const Tecnico: React.FC = () => {
       </div>
 
       {/*TODO Columna derecha */}
-      <div className="flex flex-col gap-10 max-w-md md:text-left text-center">
-        <h2 className="font-bold text-white text-2xl md:text-4xl">
+      <div className="flex flex-col gap-6 max-w-md md:text-left text-center">
+        <h3 className="relative flex justify-center md:justify-start items-center gap-2 font-montserrat text-gray-300 text-lg">
           Técnico Aire Acondicionado
+          <span className="block bg-yellow-400 w-6 h-0.5"></span>
+        </h3>
+
+        <h2 className="font-bold text-white text-2xl md:text-4xl">
+          Expertos en Instalación y Mantenimiento
         </h2>
 
         <p className="text-gray-300 text-sm">
-          Nos encargamos de cada instalación eléctrica con la máxima seguridad y
-          calidad, para que disfrutes de tu hogar o negocio sin preocupaciones.
-          Nos encargamos de cada instalación eléctrica con la máxima seguridad y
-          calidad, para que disfrutes de tu hogar o negocio sin preocupaciones.
+          Brindamos instalación, mantenimiento y reparación de equipos de aire
+          acondicionado. Nos especializamos en limpieza de filtros, recarga de
+          gas y servicios preventivos para garantizarte confort, eficiencia y
+          durabilidad en tu sistema de climatización.
         </p>
 
         <div className="flex justify-center md:justify-start gap-4 mt-4">
           <ButtonSolicitar
             icon={<BsWhatsapp />}
-            whatsappNumber="541112345678"
+            whatsappNumber="+541154781055"
             text="Solicitar"
           />
         </div>

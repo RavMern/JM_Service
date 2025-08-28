@@ -7,11 +7,13 @@ const Instalacion: React.FC = () => {
   return (
     <div className="flex md:flex-row flex-col justify-center items-center gap-12 px-4 md:px-8">
       {/*TODO Columna izquierda */}
+
       <div className="flex flex-col gap-4 max-w-md md:text-left text-center">
-        <h3 className="font-montserrat text-gray-300 text-lg">
-          <span className="-bottom-25 left-62 absolute bg-yellow-400 w-6 h-0.5"></span>
+        <h3 className="relative flex justify-center md:justify-start items-center gap-2 font-montserrat text-gray-300 text-lg">
+          <span className="block bg-yellow-400 w-6 h-0.5"></span>
           Electricista Matriculado
         </h3>
+
         <h2 className="font-bold text-white text-2xl md:text-3xl">
           Más de 10 Años de Experiencia en Electricidad
         </h2>
@@ -19,14 +21,14 @@ const Instalacion: React.FC = () => {
         <p className="text-gray-300 text-sm">
           Realizamos instalaciones y reparaciones eléctricas con los más altos
           estándares de seguridad y calidad. Garantizamos un servicio rápido,
-          eficiente y certificado, para que tu hogar, industria y negocio
+          eficiente y certificado, para que tu hogar, industria o comercio
           funcionen sin interrupciones.
         </p>
 
         <div className="flex justify-center md:justify-start gap-4 mt-4">
           <ButtonSolicitar
             icon={<BsWhatsapp />}
-            whatsappNumber="541112345678"
+            whatsappNumber="+541154781055"
             text="Solicitar"
           />
         </div>
