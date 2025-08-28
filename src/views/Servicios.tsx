@@ -23,7 +23,7 @@ function Servicios() {
               whileInView={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 2, ease: "circInOut" }}
               viewport={{ once: true }}
-              className="right-10 absolute border-9 border-cta/40 w-28 md:w-46 h-[calc(100%-7rem)] -translate-x-16"
+              className="right-10 absolute border-9 border-cta w-28 md:w-46 h-[calc(100%-7rem)] -translate-x-16"
             ></motion.div>
             <motion.div
               initial={{ translateX: 200, opacity: 0 }}
