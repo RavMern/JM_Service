@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./views/Home";
 import Layout from "./components/Layout/Layout";
 import Servicios from "./views/Servicios";
+import AboutElect from "./components/About/AboutElect";
+import AboutAlba from "./components/About/AboutAlba";
 
 function RoutesProvider(): React.ReactElement {
   const router = createBrowserRouter([
@@ -30,7 +32,15 @@ function RoutesProvider(): React.ReactElement {
             </>
           ),
         },
-        { path: "AboutUs", element: <></> },
+        {
+          path: "about/electricista",
+          element: <AboutElect />,
+        },
+        {
+          path: "about/albanil",
+          element: <AboutAlba />,
+        },
+
       ],
     },
   ]);

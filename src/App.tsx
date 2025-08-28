@@ -2,9 +2,9 @@ import RoutesProvider from "./RoutesProvider";
 
 function App() {
   return (
-    <body className="bg-background">
+    <div className="bg-background">
       <RoutesProvider />
-    </body>
+    </div>
   );
 }
 
