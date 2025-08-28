@@ -9,9 +9,9 @@ function Home(): React.ReactElement {
         <div className='flex flex-col gap-20'>
             <section> <Hero /></section>
             <section><Trabajos /></section>
-            <section className="bg-gray-900 mt-96 md:mt-0 py-14 w-full">
+            <section className="z-40 bg-gray-900 mt-96 md:mt-0 py-14 w-full">
                 <div className="mx-auto max-w-6xl text-white text-center">
-                    <h2 className="mb-4 font-bold text-3xl md:text-3xl">
+                    <h2 className="mb-4 font-bold text-cta text-3xl md:text-3xl">
                         +20 años brindando soluciones eléctricas confiables
                     </h2>
                     <p className="opacity-90 text-lg md:text-xl">

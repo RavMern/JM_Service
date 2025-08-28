@@ -30,13 +30,13 @@ function Products(): React.ReactElement {
                         whileInView={{ translateX: 0, opacity: 1 }}
                         transition={{ duration: 1.5, }}
                         viewport={{ once: true }}
-                        className="-top-5 -right-5 z-0 absolute border-[10px] border-cta/40 w-32 md:w-20 h-20"></motion.div>
+                        className="-top-5 -right-5 z-0 absolute border-[10px] border-cta w-32 md:w-20 h-20"></motion.div>
                     <motion.div
                         initial={{ translateX: 200, opacity: 0 }}
                         whileInView={{ translateX: 0, opacity: 1 }}
                         transition={{ duration: 1.5, }}
                         viewport={{ once: true }}
-                        className="bottom-15 -left-5 z-0 absolute border-[10px] border-cta/40 w-32 md:w-20 h-20"></motion.div>
+                        className="bottom-15 -left-5 z-0 absolute border-[10px] border-cta w-32 md:w-20 h-20"></motion.div>
                     {productos.map((producto, index) => (
                         <a href={producto.linkProd} key={index} className='group z-30 flex flex-col items-center gap-2 hover:drop-shadow-lg w-full hover:scale-[102%] duration-200'>
                             <img src={producto.imageUrl} alt={producto.titulo} className='rounded-md w-full h-64' />

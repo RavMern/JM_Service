@@ -30,13 +30,13 @@ function Trabajos(): React.ReactElement {
                     whileInView={{ translateX: 0, opacity: 1 }}
                     transition={{ duration: 1.5, }}
                     viewport={{ once: true }}
-                    className="-top-12 -right-8 z-0 absolute border-9 border-cta/40 w-32 md:w-96 h-96"></motion.div>
+                    className="-top-12 -right-8 z-0 absolute border-9 border-cta w-32 md:w-96 h-96"></motion.div>
                 <motion.div
                     initial={{ translateX: 200, opacity: 0 }}
                     whileInView={{ translateX: 0, opacity: 1 }}
                     transition={{ duration: 1.5, }}
                     viewport={{ once: true }}
-                    className="-bottom-12 -left-8 z-0 absolute border-9 border-cta/40 w-32 md:w-96 h-96"></motion.div>
+                    className="-bottom-12 -left-8 z-0 absolute border-9 border-cta w-32 md:w-96 h-96"></motion.div>
                 <section className='z-10 flex md:flex-row flex-col justify-around items-center gap-14 my-10'>
                     {trabajos.map((trabajo, index) => (
                         <motion.div
