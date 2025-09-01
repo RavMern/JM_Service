@@ -1,5 +1,5 @@
 import React from 'react'
-
+console.log(React);
 function AboutUs() {
     return (
         <div>
