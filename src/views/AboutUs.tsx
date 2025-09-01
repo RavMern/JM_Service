@@ -1,6 +1,6 @@
-//import React from 'react'
 
 function AboutUs(): React.ReactElement {
+
     return (
         <div>
             {/* <section>Sobre mi Juan</section> */}
