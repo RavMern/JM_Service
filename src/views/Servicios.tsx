@@ -23,7 +23,7 @@ function Servicios() {
               whileInView={{ translateX: 0, opacity: 1 }}
               transition={{ duration: 2, ease: "circInOut" }}
               viewport={{ once: true }}
-              className="right-10 absolute border-9 border-cta w-28 md:w-46 h-[calc(100%-7rem)] -translate-x-16"
+              className="top-30 right-25 absolute border-cta border-r-9 h-30 -translate-x-16"
             ></motion.div>
             <motion.div
               initial={{ translateX: 200, opacity: 0 }}
@@ -36,7 +36,7 @@ function Servicios() {
                 <span className="text-cta md:text-6xl">JM</span> Service
                 <span className="block md:-bottom-1 left-32 md:left-55 absolute bg-cta w-16 md:w-18 h-0.5 -translate-x-1/2"></span>
               </h1>
-              <p className="mt-2 max-w-md font-montserrat text-gray-200 text-end">
+              <p className="z-10 mt-2 max-w-md font-montserrat text-gray-200 text-end">
                 Electricidad y servicios
               </p>
             </motion.div>
