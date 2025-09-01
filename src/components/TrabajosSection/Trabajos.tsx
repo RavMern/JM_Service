@@ -20,21 +20,35 @@ const trabajos = [
 
 function Trabajos(): React.ReactElement {
     return (
-        <div className='max-h-[1200px]'>
-            <div className='m-auto max-w-7xl'>
-
+        <div className='flex items-center px-4 h-auto max-h-[1200px]'>
+            <div className='relative m-auto max-w-7xl'>
                 <header>
                     <h3 className='font-bold text-white text-3xl'>Trabajos realizados</h3>
                 </header>
-                <section className='flex flex-row justify-around items-center gap-14 my-10'>
+                <motion.div
+                    initial={{ translateX: -200, opacity: 0 }}
+                    whileInView={{ translateX: 0, opacity: 1 }}
+                    transition={{ duration: 1.5, }}
+                    viewport={{ once: true }}
+                    className="-top-12 -right-8 z-0 absolute border-9 border-cta w-32 md:w-96 h-96"></motion.div>
+                <motion.div
+                    initial={{ translateX: 200, opacity: 0 }}
+                    whileInView={{ translateX: 0, opacity: 1 }}
+                    transition={{ duration: 1.5, }}
+                    viewport={{ once: true }}
+                    className="-bottom-12 -left-8 z-0 absolute border-9 border-cta w-32 md:w-96 h-96"></motion.div>
+                <section className='z-10 flex md:flex-row flex-col justify-around items-center gap-14 my-10'>
                     {trabajos.map((trabajo, index) => (
                         <motion.div
                             whileHover={{ scale: 1.03 }}
-                            key={index} className='flex flex-col items-center hover:drop-shadow-2xl w-full transition-all duration-200'>
+                            key={index} className='z-30 flex flex-col items-center gap-2 hover:drop-shadow-2xl w-full transition-all duration-200'>
                             <motion.img
                                 src={trabajo.imageUrl} alt={trabajo.titulo} className='rounded-md w-full h-80' />
                             <h5 className='w-full font-bold text-white text-xl text-left'>{trabajo.titulo}</h5>
-                            <p className='w-full text-md text-primary-light text-left'>{trabajo.subTitulo}</p>
+                            <div className='px-2'>
+
+                                <p className='w-full text-md text-subTitle text-left'>{trabajo.subTitulo}</p>
+                            </div>
                         </motion.div>
                     ))}
                 </section>

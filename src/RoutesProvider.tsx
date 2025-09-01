@@ -18,11 +18,7 @@ function RoutesProvider(): React.ReactElement {
       children: [
         {
           index: true,
-          element: (
-            <>
-              <Home />
-            </>
-          ),
+          element: (<Home />),
         },
         {
           path: "servicios",

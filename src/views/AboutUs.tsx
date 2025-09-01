@@ -1,6 +1,6 @@
-import React from 'react'
-console.log(React);
-function AboutUs() {
+
+function AboutUs(): React.ReactElement {
+
     return (
         <div>
             {/* <section>Sobre mi Juan</section> */}

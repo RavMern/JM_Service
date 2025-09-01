@@ -51,13 +51,13 @@ const AboutAlba = () => {
         <h3 className="text-lg text-subTitle font-medium">
           Más de 30 años de experiencia en obras, refacciones y soluciones a medida para tu hogar o empresa.
         </h3>
-        <p className="text-gray-500 leading-relaxed">
+        <p className="text-gray-300 leading-relaxed">
           Soy Damian, albañil especializado en construcción y mantenimiento integral, con amplia trayectoria en obras residenciales, comerciales e industriales.
         </p>
-        <p className="text-gray-500 leading-relaxed">
+        <p className="text-gray-300 leading-relaxed">
           Construcción de paredes, techos y ampliaciones. Revoques finos y gruesos, terminaciones prolijas. Colocación de cerámicos, porcelanatos y pisos. Refacciones y remodelaciones completas de interiores y exteriores. Mantenimiento integral y soluciones rápidas a problemas estructurales.
           </p>
-          <p className="text-gray-500 leading-relaxed">Mi compromiso es brindar un servicio responsable, seguro y de máxima calidad, respetando los tiempos de obra y asegurando resultados duraderos.
+          <p className="text-gray-300 leading-relaxed">Mi compromiso es brindar un servicio responsable, seguro y de máxima calidad, respetando los tiempos de obra y asegurando resultados duraderos.
         </p>
         {/* Formulario */}
         <div className="bg-white/25 shadow-xl rounded-2xl p-6">
