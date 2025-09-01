@@ -51,17 +51,17 @@ const AboutElect = () => {
         <h3 className="text-lg text-subTitle font-medium">
           Más de 30 años de experiencia brindando soluciones eléctricas rápidas, eficientes y con garantía profesional.
         </h3>
-        <p className="text-gray-500 leading-relaxed">
+        <p className="text-gray-300 leading-relaxed">
           Soy Juan Manuel, Electricista Matriculado, especializado en instalaciones y mantenimiento eléctrico residencial, comercial e industrial.
         </p>
-        <p className="text-gray-500 leading-relaxed">
+        <p className="text-gray-300 leading-relaxed">
           Instalaciones nuevas y adecuación a normativas vigentes.
           Reparación de fallas eléctricas, tableros, disyuntores y térmicas.
           Colocación de luminarias LED, sensores de movimiento y sistemas de ahorro energético.
           Cableado estructurado y mantenimiento preventivo integral.
           Asesoramiento técnico personalizado y garantía de seguridad en cada trabajo.
           </p>
-          <p className="text-gray-500 leading-relaxed">Mi compromiso es ofrecer soluciones profesionales, confiables y seguras, cuidando cada detalle con responsabilidad y eficiencia.
+          <p className="text-gray-300 leading-relaxed">Mi compromiso es ofrecer soluciones profesionales, confiables y seguras, cuidando cada detalle con responsabilidad y eficiencia.
         </p>
         {/* Formulario */}
         <div className="bg-white/25 shadow-xl rounded-2xl p-6">
