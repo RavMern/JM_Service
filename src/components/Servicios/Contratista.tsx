@@ -28,6 +28,7 @@ const Contratista: React.FC = () => {
           <ButtonSolicitar
             icon={<BsWhatsapp />}
             whatsappNumber="+5491134705822"
+            type="albanil"
             text="Solicitar"
           />
         </div>
