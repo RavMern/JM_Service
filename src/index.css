@@ -12,5 +12,30 @@
     --color-titles: #fff;
     --color-subTitle: #CCC;
     --color-n-text: #fff;
-   
+
+}
+
+@layer base {
+    body {
+        @apply relative bg-background text-white;
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 18px 18px;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 700px;
+        height: 700px;
+        background: rgba(242, 157, 29, 0.18);
+        /* color-cta con menos opacidad */
+        filter: blur(160px);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: -1;
+        /* queda detrás de TODO */
+    }
 }

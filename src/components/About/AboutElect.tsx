@@ -10,7 +10,6 @@ const AboutElect = () => {
     message: "",
   });
 
-  // Número de WhatsApp en formato internacional
   const phoneNumber = "5491154781055";
 
   const handleChange = (
@@ -30,7 +29,8 @@ const AboutElect = () => {
     const whatsappMessage =
       `Hola, soy ${firstName} ${lastName}.\n` +
       `Mi correo es: ${email}\n` +
-      `Mensaje: ${message}`;
+      `Mensaje: ${message}\n\n` +
+      `#web-JM-Service`;
 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       whatsappMessage
@@ -40,8 +40,8 @@ const AboutElect = () => {
   };
 
   return (
-    <section className="bg-background px-6 py-16 text-n-text">
-      <div className="grid items-center gap-12 mx-auto max-w-6xl md:grid-cols-2">
+    <section className="px-6 md:py-16 pt-6 text-n-text">
+      <div className="items-center gap-12 grid md:grid-cols-2 mx-auto max-w-6xl">
         {/* Columna izquierda */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -49,42 +49,45 @@ const AboutElect = () => {
           transition={{ duration: 0.7 }}
           className="space-y-6"
         >
-          <h2 className="text-4xl font-extrabold text-titles">
+          <h2 className="font-extrabold text-titles text-4xl">
             Juan Manuel - Electricista Matriculado
           </h2>
-          <h3 className="text-lg font-medium text-subTitle">
-            Más de 30 años de experiencia brindando soluciones eléctricas rápidas,
-            eficientes y con garantía profesional.
+          <h3 className="font-medium text-subTitle text-lg">
+            Más de 20 años de experiencia brindando soluciones eléctricas
+            rápidas, eficientes y con garantía profesional.
           </h3>
-          <p className="leading-relaxed text-gray-300">
+          <p className="text-gray-300 leading-relaxed">
             Soy Juan Manuel, Electricista Matriculado, especializado en
             instalaciones y mantenimiento eléctrico residencial, comercial e
             industrial.
           </p>
-          <p className="leading-relaxed text-gray-300">
-            Instalaciones nuevas y adecuación a normativas vigentes. Reparación de
-            fallas eléctricas, tableros, disyuntores y térmicas. Colocación de
-            luminarias LED, sensores de movimiento y sistemas de ahorro energético.
-            Cableado estructurado y mantenimiento preventivo integral. Asesoramiento
-            técnico personalizado y garantía de seguridad en cada trabajo.
+          <p className="text-gray-300 leading-relaxed">
+            Instalaciones nuevas y adecuación a normativas vigentes. Reparación
+            de fallas eléctricas, tableros, disyuntores y térmicas. Colocación
+            de luminarias LED, sensores de movimiento y sistemas de ahorro
+            energético. Cableado estructurado y mantenimiento preventivo
+            integral. Asesoramiento técnico personalizado y garantía de
+            seguridad en cada trabajo.
           </p>
-          <p className="leading-relaxed text-gray-300">
-            Mi compromiso es ofrecer soluciones profesionales, confiables y seguras,
-            cuidando cada detalle con responsabilidad y eficiencia.
+          <p className="text-gray-300 leading-relaxed">
+            Mi compromiso es ofrecer soluciones profesionales, confiables y
+            seguras, cuidando cada detalle con responsabilidad y eficiencia.
           </p>
 
           {/* Formulario */}
-          <div className="p-6 bg-white/25 rounded-2xl shadow-xl">
-            <h3 className="mb-4 text-2xl font-semibold text-titles">Contactame</h3>
+          <div className="bg-white/25 shadow-xl p-6 rounded-2xl">
+            <h3 className="mb-4 font-semibold text-titles text-2xl">
+              Contactame
+            </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="flex flex-col gap-4 md:flex-row">
+              <div className="flex md:flex-row flex-col gap-4">
                 <input
                   type="text"
                   name="firstName"
                   placeholder="Nombre"
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="flex-1 p-3 bg-white/80 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400"
+                  className="flex-1 bg-white/80 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400"
                   required
                 />
                 <input
@@ -93,7 +96,7 @@ const AboutElect = () => {
                   placeholder="Apellido"
                   value={formData.lastName}
                   onChange={handleChange}
-                  className="flex-1 p-3 bg-white/80 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400"
+                  className="flex-1 bg-white/80 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400"
                   required
                 />
               </div>
@@ -103,7 +106,7 @@ const AboutElect = () => {
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-3 bg-white/80 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400"
+                className="bg-white/80 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary w-full text-gray-800 placeholder-gray-400"
                 required
               />
               <textarea
@@ -111,7 +114,7 @@ const AboutElect = () => {
                 placeholder="Consulta sobre tu servicio eléctrico..."
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full h-32 p-3 bg-white/80 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400"
+                className="bg-white/80 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary w-full h-32 text-gray-800 placeholder-gray-400"
                 required
               />
               <AboutElectButton text="Enviar" />
@@ -124,12 +127,15 @@ const AboutElect = () => {
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="flex justify-center"
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="md:bottom-62 relative flex justify-center items-center"
         >
+          <span className="top-6 left-60 md:left-24 -z-10 absolute border-9 border-cta w-38 h-[calc(100%-6rem)] -translate-x-10"></span>
           <img
-            src="/electricista.png"
+            src="/juan.webp"
             alt="Electricista"
-            className="max-w-xs shadow-lg rounded-2xl md:max-w-sm hover:scale-105 transition-transform duration-300 transform"
+            className="top-12 relative shadow-lg rounded-2xl max-w-xs md:max-w-sm hover:scale-105 transition-transform duration-300 transform"
           />
         </motion.div>
       </div>

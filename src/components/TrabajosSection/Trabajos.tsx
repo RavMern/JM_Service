@@ -1,60 +1,78 @@
-import React from 'react'
-import { motion } from "framer-motion"
+import React from "react";
+
 const trabajos = [
-    {
-        imageUrl: "https://ss-static-01.esmsv.com/id/170655/galeriaimagenes/obtenerimagen/?id=534&tipoEscala=crop&width=977&height=977",
-        titulo: "Escuela N°59",
-        subTitulo: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea reprehenderit illum odit est consequuntur",
-    },
-    {
-        imageUrl: "https://st.depositphotos.com/1140262/1473/i/450/depositphotos_14731059-stock-photo-electrician-peeling-off-wires.jpg",
-        titulo: "Clinica San miguel",
-        subTitulo: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea reprehenderit illum odit est consequuntur ",
-    },
-    {
-        imageUrl: "https://www.selectoradelcentro.com.ar/wp-content/uploads/2019/05/electricista.jpg",
-        titulo: "Empresa LNS",
-        subTitulo: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea reprehenderit illum odit est consequuntur  ",
-    }
-]
+  {
+    imageUrl: "/descarga.webp",
+    titulo: "Escuela N°59",
+    subTitulo:
+      "Instalación eléctrica completa, mantenimiento preventivo y mejoras en seguridad.",
+  },
+  {
+    imageUrl: "electricista.webp",
+    titulo: "Clínica San Miguel",
+    subTitulo:
+      "Optimización de sistemas eléctricos críticos y cableado de alta confiabilidad.",
+  },
+  {
+    imageUrl: "/pinsa.webp",
+    titulo: "Empresa LNS",
+    subTitulo:
+      "Actualización de infraestructura eléctrica y mejoras en sistemas lumínicos.",
+  },
+];
 
 function Trabajos(): React.ReactElement {
-    return (
-        <div className='flex items-center px-4 h-auto max-h-[1200px]'>
-            <div className='relative m-auto max-w-7xl'>
-                <header>
-                    <h3 className='font-bold text-white text-3xl'>Trabajos realizados</h3>
-                </header>
-                <motion.div
-                    initial={{ translateX: -200, opacity: 0 }}
-                    whileInView={{ translateX: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, }}
-                    viewport={{ once: true }}
-                    className="-top-12 -right-8 z-0 absolute border-9 border-cta w-32 md:w-96 h-96"></motion.div>
-                <motion.div
-                    initial={{ translateX: 200, opacity: 0 }}
-                    whileInView={{ translateX: 0, opacity: 1 }}
-                    transition={{ duration: 1.5, }}
-                    viewport={{ once: true }}
-                    className="-bottom-12 -left-8 z-0 absolute border-9 border-cta w-32 md:w-96 h-96"></motion.div>
-                <section className='z-10 flex md:flex-row flex-col justify-around items-center gap-14 my-10'>
-                    {trabajos.map((trabajo, index) => (
-                        <motion.div
-                            whileHover={{ scale: 1.03 }}
-                            key={index} className='z-30 flex flex-col items-center gap-2 hover:drop-shadow-2xl w-full transition-all duration-200'>
-                            <motion.img
-                                src={trabajo.imageUrl} alt={trabajo.titulo} className='rounded-md w-full h-80' />
-                            <h5 className='w-full font-bold text-white text-xl text-left'>{trabajo.titulo}</h5>
-                            <div className='px-2'>
+  return (
+    <div className="relative px-4 md:px-14 pt-22 overflow-hidden">
+      {/* DOTTED GRID BACKGROUND */}
+      <div
+        className="absolute inset-0 opacity-[0.07] pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px)",
+          backgroundSize: "18px 18px",
+        }}
+      />
 
-                                <p className='w-full text-md text-subTitle text-left'>{trabajo.subTitulo}</p>
-                            </div>
-                        </motion.div>
-                    ))}
-                </section>
+      <div className="relative mx-auto max-w-7xl">
+        {/* TITULO */}
+        <header className="mb-12 text-left">
+          <h3 className="z-10 relative font-bold text-white text-3xl md:text-5xl">
+            Trabajos realizados
+          </h3>
+          <span className="block bg-cta mt-1 rounded-full w-10 h-1" />
+        </header>
+
+        {/* GRID RESPONSIVE */}
+        <section className="z-10 relative gap-10 grid grid-cols-1 md:grid-cols-3">
+          {trabajos.map((trabajo, index) => (
+            <div
+              key={index}
+              className="group flex flex-col gap-3 bg-primary-dark/40 shadow-lg hover:shadow-2xl backdrop-blur-md border border-white/5 rounded-lg overflow-hidden transition-all hover:-translate-y-1 duration-300"
+            >
+              <div className="overflow-hidden">
+                <img
+                  src={trabajo.imageUrl}
+                  alt={trabajo.titulo}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="px-4 pb-5">
+                <h5 className="font-semibold text-white text-xl">
+                  {trabajo.titulo}
+                </h5>
+
+                <p className="mt-1 text-subTitle leading-relaxed">
+                  {trabajo.subTitulo}
+                </p>
+              </div>
             </div>
-        </div>
-    )
+          ))}
+        </section>
+      </div>
+    </div>
+  );
 }
 
-export default Trabajos
+export default Trabajos;

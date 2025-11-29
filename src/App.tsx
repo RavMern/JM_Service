@@ -3,12 +3,9 @@ import RoutesProvider from "./RoutesProvider";
 
 function App() {
   return (
-    <div className="bg-background">
+    <div>
       <RoutesProvider />
-      <WhatsAppButton
-        whatsappNumber="+541154781055"
-        message="Hola, quiero información"
-      />
+      <WhatsAppButton whatsappNumber="+541154781055" />
     </div>
   );
 }
