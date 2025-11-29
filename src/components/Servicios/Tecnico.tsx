@@ -10,7 +10,7 @@ const Tecnico: React.FC = () => {
         <span className="-top-6 md:-top-6 md:right-30 left-2 z-10 absolute border-9 border-cta w-38 md:w-46 h-[calc(100%-12rem)] -translate-x-10"></span>
 
         <img
-          src="/tecnico.webp"
+          src="/juan-tec.webp"
           alt="Tecnico"
           className="z-10 relative shadow-md rounded-tl-4xl rounded-br-4xl w-72 h-auto"
         />
@@ -44,6 +44,7 @@ const Tecnico: React.FC = () => {
           <ButtonSolicitar
             icon={<BsWhatsapp />}
             whatsappNumber="+541154781055"
+            type="aire"
             text="Solicitar"
           />
         </div>

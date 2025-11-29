@@ -5,6 +5,7 @@ interface ButtonSolicitarProps {
   text?: string;
   icon?: ReactNode;
   whatsappNumber: string;
+  type: "electricista" | "aire" | "albanil";
 }
 
 interface Ripple {
@@ -19,10 +20,23 @@ const ButtonSolicitar: React.FC<ButtonSolicitarProps> = ({
   text = "Solicitar",
   icon,
   whatsappNumber,
+  type,
 }) => {
   const [ripples, setRipples] = useState<Ripple[]>([]);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const timeoutRef = useRef<number | null>(null);
+
+  const getMessageByType = (t: "electricista" | "aire" | "albanil"): string => {
+    if (t === "electricista") {
+      return "Hola, quiero solicitar un servicio de electricista matriculado. Mi nombre es:\n\n#web-JM-Service";
+    }
+
+    if (t === "aire") {
+      return "Hola, quiero realizar una consulta sobre servicio técnico de aire acondicionado. Mi nombre es:\n\n#web-JM-Service";
+    }
+
+    return "Hola, quiero consultar por trabajos de albañilería. Mi nombre es:\n\n#web-JM-Service";
+  };
 
   const createRippleFromCenter = (el?: HTMLButtonElement | null) => {
     const node = el ?? buttonRef.current;
@@ -57,7 +71,14 @@ const ButtonSolicitar: React.FC<ButtonSolicitarProps> = ({
   };
 
   const handleClick = () => {
-    window.open(`https://wa.me/${whatsappNumber}`, "_blank");
+    const presetMessage = getMessageByType(type);
+
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+        presetMessage
+      )}`,
+      "_blank"
+    );
   };
 
   useEffect(() => {

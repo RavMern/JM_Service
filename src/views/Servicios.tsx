@@ -11,7 +11,7 @@ function Servicios() {
     <>
       <div className="relative w-full">
         <img
-          src="/portada-electricista.jpg"
+          src="/portada-electricista.webp"
           alt="Instalación"
           className="w-full h-64 md:h-96 object-cover"
         />
